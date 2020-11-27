@@ -37,17 +37,17 @@ function draw() {
      
     if(deformation>=180) {
     car.shapeColor=color(255,0,0);
-    rating="LETHAL";
+    
     }
 
     if(deformation<180 && deformation>=80) {
       car.shapeColor=color(230,230,0);
-      rating="AVERAGE";
+     
     }
 
     if(deformation<80) {
       car.shapeColor=color(0,255,0);
-      rating="GOOD";
+     
     }
 
     state="end";
@@ -74,7 +74,7 @@ function draw() {
     text("Deformation: "+deformation,600,50);
 
     textSize(25);
-    text("Rating: "+rating,800,50);
+   
 
     text("Press 'R' to reset",1050,50);
     if(keyDown("r")) {
